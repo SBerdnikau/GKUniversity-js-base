@@ -8,19 +8,11 @@ var goods = [
 ];
 
 var i = 0;
-
+var sum = 0;
 var result = [];
 
 while( i < goods.length ){
     result.push( goods[i][1] * goods[i][2] );
-    i++;
-}
-
-var sum = 0;
-
-i = 0;
-
-while ( i < result.length ){
     sum +=  result[i];
     i++;
 }
