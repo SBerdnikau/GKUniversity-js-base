@@ -8,23 +8,23 @@ function convertNumToObject(num){
         units: null
     };
 
+   	function convertNumToHundreds(num) {
+        return Math.floor( num / 100 );
+    }
+
+    function convertNumToTens(num) {
+        return Math.floor( (num / 10) % 10 );
+    }
+
+    function convertNumToUnits(num) {
+        return num % 10;
+    }
+
     if( isNaN(num) ){
 
         console.log('Вы ввели не число!');
 
     }else if( num > 0 && num < 999 ){
-
-        function convertNumToHundreds(num) {
-            return Math.floor( num / 100 );
-        }
-
-        function convertNumToTens(num) {
-            return Math.floor( (num / 10) % 10 );
-        }
-
-        function convertNumToUnits(num) {
-            return num % 10;
-        }
 
         obj.hundreds = convertNumToHundreds(num);
         obj.tens = convertNumToTens(num);
