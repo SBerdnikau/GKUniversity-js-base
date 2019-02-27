@@ -1,5 +1,17 @@
 //Task #1
 
+function convertNumToHundreds(value) {
+    return Math.floor( value / 100 );
+}
+
+function convertNumToTens(value) {
+    return Math.floor( (value / 10) % 10 );
+}
+
+function convertNumToUnits(value) {
+    return value % 10;
+}
+
 function convertNumToObject(num){
 
     var obj = {
@@ -7,18 +19,6 @@ function convertNumToObject(num){
         tens: null,
         units: null
     };
-
-   	function convertNumToHundreds(num) {
-        return Math.floor( num / 100 );
-    }
-
-    function convertNumToTens(num) {
-        return Math.floor( (num / 10) % 10 );
-    }
-
-    function convertNumToUnits(num) {
-        return num % 10;
-    }
 
     if( isNaN(num) ){
 
