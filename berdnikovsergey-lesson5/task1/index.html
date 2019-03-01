@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript lesson 5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="head">JavaScript Homework 5</div>
+
+    <div id="boarders__box" class="boarders__box">
+
+        <!--шахматная доска на html-->
+        <div class="board">
+            <div class="board__row border__gray">
+                <div class="board__coll"></div>
+                <div class="board__coll">a</div>
+                <div class="board__coll">b</div>
+                <div class="board__coll">c</div>
+                <div class="board__coll">d</div>
+                <div class="board__coll">e</div>
+                <div class="board__coll">f</div>
+                <div class="board__coll">g</div>
+                <div class="board__coll">h</div>
+                <div class="board__coll"></div>
+            </div>
+            <div class="board__row">
+                <div class="board__coll border__gray">8</div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll border__gray">8</div>
+            </div>
+            <div class="board__row">
+                <div class="board__coll border__gray">7</div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll border__gray">7</div>
+            </div>
+            <div class="board__row">
+                <div class="board__coll border__gray">6</div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll border__gray">6</div>
+            </div>
+            <div class="board__row">
+                <div class="board__coll border__gray">5</div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll border__gray">5</div>
+            </div>
+            <div class="board__row">
+                <div class="board__coll border__gray">4</div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll border__gray">4</div>
+            </div>
+            <div class="board__row">
+                <div class="board__coll border__gray">3</div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll border__gray">3</div>
+            </div>
+            <div class="board__row">
+                <div class="board__coll border__gray">2</div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll border__gray">2</div>
+            </div>
+            <div class="board__row">
+                <div class="board__coll border__gray">1</div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll board__black"></div>
+                <div class="board__coll board__white"></div>
+                <div class="board__coll border__gray">1</div>
+            </div>
+            <div class="board__row border__gray">
+                <div class="board__coll"></div>
+                <div class="board__coll">a</div>
+                <div class="board__coll">b</div>
+                <div class="board__coll">c</div>
+                <div class="board__coll">d</div>
+                <div class="board__coll">e</div>
+                <div class="board__coll">f</div>
+                <div class="board__coll">g</div>
+                <div class="board__coll">h</div>
+                <div class="board__coll"></div>
+            </div>
+        </div>
+
+        <!--здесь вставляется шахматная доска на js-->
+
+    </div>
+
+
+    <script src="js/task1.js"></script>
+</body>
+</html>
