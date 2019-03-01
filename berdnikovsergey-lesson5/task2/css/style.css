@@ -1,0 +1,29 @@
+body{
+    background: #3D3347;
+}
+
+.head{
+    font-size: 42px;
+    color: #fff;
+    font-family: "Arial Black",sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.catalog{
+    display: flex;
+    width: 360px;
+    height: 250px;
+    background: #ccc;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalSum{
+    font-size: 24px;
+    font-family: roboto,sans-serif;
+    font-weight: 700;
+}
+
